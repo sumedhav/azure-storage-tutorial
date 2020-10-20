@@ -10,9 +10,11 @@
 <p id="message">{{message}}</p>
 
 <h2>Generated Thumbnails</h2>
-{{#each this.thumbnails}}
-  <img src="https://{{../accountName}}.blob.core.windows.net/{{../containerName}}/{{name}}">
-{{/each}}
+<ol>
+  {{#each this.thumbnails}}
+    <li>{{name}}</li>
+  {{/each}}
+</ol>
 
 <hr>
 <p>This app has no official privacy policy. Your data will be uploaded to a service in order to produce a thumbnail. Your images will be public once you upload them and there is no automated way to remove them.</p>
